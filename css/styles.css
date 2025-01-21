@@ -12,3 +12,191 @@ p{
     margin: 2em 0 0;
 
 }
+
+body {
+    background-color: #333;
+
+    margin-bottom: 100vh;
+}
+
+section {
+    min-height: 100vh;
+    background-color: #ccc;
+
+    margin-bottom: 100px;
+}
+
+header {
+    background-color: lightgreen;
+}
+main {
+    background-color: lightseagreen;
+}
+footer {
+    background-color: lightcoral;
+}
+
+
+.container {
+    background-color: salmon;
+    margin-bottom: 40px;
+}
+
+.tall {
+    height: 500px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+
+    background-color: blue;
+    border: 8px solid black;
+}
+
+.no-width {
+    width: auto;
+}
+
+.big {
+    width: 90px;
+    height: 90px;
+    background-color: crimson;
+}
+
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+img {
+    float: right;
+}
+
+
+/* Flex Properties */
+
+.flex {
+    display: flex;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.align-items-end {
+    align-items: end;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap {
+    gap: 30px;
+}
+
+.grow {
+    flex-grow: 1;
+    background-color: blueviolet;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+    background-color: teal;
+}
+
+.half-shrink {
+    flex-shrink: 0.5;
+    background-color: cyan;
+}
+
+.basis {
+    flex-basis: 70px;
+    background-color: orangered;
+}
+
+.full-spring {
+    flex: 1 0 30px;
+}
+
+
+/* Grid properties */
+
+.grid {
+    display: grid;
+}
+
+.two-col {
+    grid-template-columns: 300px 300px;
+}
+
+.two-third-col {
+    grid-template-columns: 2fr 1fr;
+}
+
+.sidebar {
+    grid-template-columns: 200px 1fr;
+}
+
+.align-content-center {
+    align-content: center;
+}
+.align-content-end {
+    align-content: end;
+}
+
+.place-content-center {
+    place-content: center;
+}
+
+/* Grid Layouts */
+
+.basic-stacked-layout {
+    grid-template-rows: 100px 1fr auto;
+}
+
+.sidebar-layout {
+    grid-template-rows: 100px 1fr auto;
+    grid-template-columns: 150px 1fr;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.sidebar-layout-areas {
+    grid-template: 100px 1fr auto / 150px 1fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.header-area {
+    grid-area: header;
+}
+
+.footer-area {
+    grid-area: footer;
+}
